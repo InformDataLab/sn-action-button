@@ -63,7 +63,28 @@
     json5 "^2.2.1"
     semver "^6.3.0"
 
-"@babel/core@7.18.2", "@babel/core@^7.11.6":
+"@babel/core@7.18.5":
+  version "7.18.5"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.18.5.tgz#c597fa680e58d571c28dda9827669c78cdd7f000"
+  integrity sha512-MGY8vg3DxMnctw0LdvSEojOsumc70g0t18gNyUdAZqB1Rpd1Bqo/svHGvt+UJ6JcGX+DIekGFDxxIWofBxLCnQ==
+  dependencies:
+    "@ampproject/remapping" "^2.1.0"
+    "@babel/code-frame" "^7.16.7"
+    "@babel/generator" "^7.18.2"
+    "@babel/helper-compilation-targets" "^7.18.2"
+    "@babel/helper-module-transforms" "^7.18.0"
+    "@babel/helpers" "^7.18.2"
+    "@babel/parser" "^7.18.5"
+    "@babel/template" "^7.16.7"
+    "@babel/traverse" "^7.18.5"
+    "@babel/types" "^7.18.4"
+    convert-source-map "^1.7.0"
+    debug "^4.1.0"
+    gensync "^1.0.0-beta.2"
+    json5 "^2.2.1"
+    semver "^6.3.0"
+
+"@babel/core@^7.11.6":
   version "7.18.2"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.18.2.tgz#87b2fcd7cce9becaa7f5acebdc4f09f3dd19d876"
   integrity sha512-A8pri1YJiC5UnkdrWcmfZTJTV85b4UXTAfImGmCfYmax4TR9Cw8sDS0MOk++Gp2mE/BefVJ5nwy5yzqNJbP/DQ==
@@ -442,6 +463,11 @@
   version "7.18.4"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.4.tgz#6774231779dd700e0af29f6ad8d479582d7ce5ef"
   integrity sha512-FDge0dFazETFcxGw/EXzOkN8uJp0PC7Qbm+Pe9T+av2zlBpOgunFHkQPPn+eRuClU73JF+98D531UgayY89tow==
+
+"@babel/parser@^7.18.5":
+  version "7.18.5"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.5.tgz#337062363436a893a2d22faa60be5bb37091c83c"
+  integrity sha512-YZWVaglMiplo7v8f1oMQ5ZPQr0vn7HPeZXxXWsxXJRjGVrzUFn9OxFQl1sb5wzfootjA/yChhW84BV+383FSOw==
 
 "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@^7.16.7":
   version "7.16.7"
@@ -1435,6 +1461,22 @@
     debug "^4.1.0"
     globals "^11.1.0"
 
+"@babel/traverse@^7.18.5":
+  version "7.18.5"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.18.5.tgz#94a8195ad9642801837988ab77f36e992d9a20cd"
+  integrity sha512-aKXj1KT66sBj0vVzk6rEeAO6Z9aiiQ68wfDgge3nHhA/my6xMM/7HGQUNumKZaoa2qUPQ5whJG9aAifsxUKfLA==
+  dependencies:
+    "@babel/code-frame" "^7.16.7"
+    "@babel/generator" "^7.18.2"
+    "@babel/helper-environment-visitor" "^7.18.2"
+    "@babel/helper-function-name" "^7.17.9"
+    "@babel/helper-hoist-variables" "^7.16.7"
+    "@babel/helper-split-export-declaration" "^7.16.7"
+    "@babel/parser" "^7.18.5"
+    "@babel/types" "^7.18.4"
+    debug "^4.1.0"
+    globals "^11.1.0"
+
 "@babel/types@^7.0.0", "@babel/types@^7.16.0", "@babel/types@^7.16.7", "@babel/types@^7.16.8", "@babel/types@^7.17.0", "@babel/types@^7.3.0", "@babel/types@^7.3.3", "@babel/types@^7.4.4":
   version "7.17.0"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.17.0.tgz#a826e368bccb6b3d84acd76acad5c0d87342390b"
@@ -1443,7 +1485,7 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@babel/types@^7.17.10", "@babel/types@^7.18.0", "@babel/types@^7.18.2":
+"@babel/types@^7.17.10", "@babel/types@^7.18.0", "@babel/types@^7.18.2", "@babel/types@^7.18.4":
   version "7.18.4"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.18.4.tgz#27eae9b9fd18e9dccc3f9d6ad051336f307be354"
   integrity sha512-ThN1mBcMq5pG/Vm2IcBmPPfyPXbd8S02rS+OBIDENdufvqC7Z/jHPCv9IcP01277aKtDI8g/2XysBN4hA8niiw==
@@ -1912,10 +1954,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nebula.js/cli-build@2.11.0", "@nebula.js/cli-build@^2.11.0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@nebula.js/cli-build/-/cli-build-2.11.0.tgz#65e846b763b379f6d5e5f4ea06bd73ff52457723"
-  integrity sha512-nFKHdjqEjHfR4GG1KAKAk+qJEh146tOpSft3bihfeyU8MNKExc239o0n56ThWZWBuvmA4pJ+iiMAwe+SWueFmg==
+"@nebula.js/cli-build@2.12.0", "@nebula.js/cli-build@^2.12.0":
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/@nebula.js/cli-build/-/cli-build-2.12.0.tgz#0bd8c7e71b5112a383b414ad9f504df51c67af5f"
+  integrity sha512-PLi7sDDF82w42+hbaMClzJ7HaFfpRYArdapfffz/sgY0tROlwWdADMl2ECQDVOlNxQcfHWRvKn9aO7dqxVj4lA==
   dependencies:
     "@babel/cli" "7.17.10"
     "@babel/core" "7.17.10"
@@ -1935,25 +1977,25 @@
     rollup-plugin-terser "7.0.2"
     yargs "17.4.1"
 
-"@nebula.js/cli-create@^2.11.0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@nebula.js/cli-create/-/cli-create-2.11.0.tgz#bb8899c934ffdc4795076e064c4f519ab1b5b514"
-  integrity sha512-6ot6znj++J56H7VezN+PJxVjKzP7qXF+5827AxbNpeDPir/McoPnbsWCTUtgT7xCZGsc6Ahwultd6OMG4ZinyA==
+"@nebula.js/cli-create@^2.12.0":
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/@nebula.js/cli-create/-/cli-create-2.12.0.tgz#4922d8ff4cebde9b20ed8de3d19412e7502fcf8d"
+  integrity sha512-Oli6EVDYxraGbhy+z7a5snxuM26s0rWsBc8Bg8XLbdemeli4p42Pd8FnBdjqRsG5cIgmd+C8il/4UGRyJLh62g==
   dependencies:
     chalk "4.1.2"
     ejs "3.1.7"
     fs-extra "10.1.0"
     inquirer "8.2.4"
 
-"@nebula.js/cli-sense@2.11.0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@nebula.js/cli-sense/-/cli-sense-2.11.0.tgz#3940c8b68958882594da65533ed6a7bd183c6b2a"
-  integrity sha512-fBZjK4XiyIWPZlHLQXkPGUrHrbQQKN7n0Q5kGWTLRLgIlPA6FW08wAx22obevjuTwwlFeiYTd1j6VUci9erfpg==
+"@nebula.js/cli-sense@2.12.0":
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/@nebula.js/cli-sense/-/cli-sense-2.12.0.tgz#7233c4e1185c5e11d257d057986b5db87517c5ae"
+  integrity sha512-4o7DbrjN7vJbfW2rUVliB1qtcPobVBpBlS36Xfom1BfD7oGeix6IXUbicJY2U4wZdIOxtz9RrrpWh5reTvxpag==
   dependencies:
     "@babel/cli" "7.17.10"
     "@babel/core" "7.17.10"
     "@babel/preset-env" "7.17.10"
-    "@nebula.js/stardust" "^2.11.0"
+    "@nebula.js/stardust" "^2.12.0"
     "@rollup/plugin-commonjs" "22.0.0"
     "@rollup/plugin-node-resolve" "13.3.0"
     "@rollup/plugin-replace" "4.0.0"
@@ -1965,12 +2007,12 @@
     rollup-plugin-terser "7.0.2"
     yargs "17.4.1"
 
-"@nebula.js/cli-serve@2.11.0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@nebula.js/cli-serve/-/cli-serve-2.11.0.tgz#6759da4a949b06a3ca8512e0d10928535fa17057"
-  integrity sha512-5yTsxNeLr+e7MGWAQmETgGRQm5b9fIo1OroZZ2JkP6QBKSfhc8eqRlyKovge4p7HR5Z/Aqhf37GYq/eWAaG7Eg==
+"@nebula.js/cli-serve@2.12.0":
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/@nebula.js/cli-serve/-/cli-serve-2.12.0.tgz#14f8acc5e8a04b44c776ec25c145eb0978f76e04"
+  integrity sha512-myB++GljmLVRqWI+Cpsj7mnZJim+vSxdJT4oujU5ro6Z8gF9o/E3hxF+Wpeq64mRbz4mFRLVxTsLr9cuhswNCw==
   dependencies:
-    "@nebula.js/cli-build" "^2.11.0"
+    "@nebula.js/cli-build" "^2.12.0"
     body-parser "1.20.0"
     chalk "4.1.2"
     chokidar "3.5.3"
@@ -1987,19 +2029,19 @@
     ws "8.6.0"
     yargs "17.4.1"
 
-"@nebula.js/cli@2.11.0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@nebula.js/cli/-/cli-2.11.0.tgz#eb1bc49cc808989284744fc5b2ba2fc4f5b07d67"
-  integrity sha512-JXjc6Uzq2nvoLfrANy9asIhr9arCR/jEWMBUXu9uXrF7U4FPoGwlilnpiTLzE8pd0HjtQS9YUNYmMItr4n/Lqw==
+"@nebula.js/cli@2.12.0":
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/@nebula.js/cli/-/cli-2.12.0.tgz#8237d4f8d0a59b25cd461a8b92eaf84b736b2e82"
+  integrity sha512-wKUXkk+m8O19txGPFLlLNSxMhOMkq4EC6hKrVft4xIYYygbb5bitlv4qdIZKBr//dwQENL7wdHDP1jx7ZoOarA==
   dependencies:
-    "@nebula.js/cli-create" "^2.11.0"
+    "@nebula.js/cli-create" "^2.12.0"
     import-cwd "3.0.0"
     yargs "17.4.1"
 
-"@nebula.js/stardust@2.11.0", "@nebula.js/stardust@^2.11.0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@nebula.js/stardust/-/stardust-2.11.0.tgz#8781a96847b2bac7e8fd462124a374229dfe7d6a"
-  integrity sha512-W9qJQr1nenxIjIurPm3A1L/gE3QRdA6M+4MEomNICdPIqa36xSovXfwkisQFfu6t1HHGyhTJ6Mi0Hcz1jihKiw==
+"@nebula.js/stardust@2.12.0", "@nebula.js/stardust@^2.12.0":
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/@nebula.js/stardust/-/stardust-2.12.0.tgz#341a25a258218e4e18798e42772eda3378218280"
+  integrity sha512-8iIEVS6WWfz9IDeD+Z8xPaOysEQoOtfMI40Xb0pjHbwrPwiDICsj5ecEWiOjFXl/EqL8WSCKAFtbMt3QrnosZA==
   dependencies:
     "@types/qlik-engineapi" "12.67.12"
 
@@ -4307,10 +4349,10 @@ eslint-visitor-keys@^3.3.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.3.0.tgz#f6480fa6b1f30efe2d1968aa8ac745b862469826"
   integrity sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==
 
-eslint@8.17.0:
-  version "8.17.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.17.0.tgz#1cfc4b6b6912f77d24b874ca1506b0fe09328c21"
-  integrity sha512-gq0m0BTJfci60Fz4nczYxNAlED+sMcihltndR8t9t1evnU/azx53x3t2UHXC/uRjcbvRw/XctpaNygSTcQD+Iw==
+eslint@8.18.0:
+  version "8.18.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.18.0.tgz#78d565d16c993d0b73968c523c0446b13da784fd"
+  integrity sha512-As1EfFMVk7Xc6/CvhssHUjsAQSkpfXvUGMFC3ce8JDe6WvqCgRrLOBQbVpsBFr1X1V+RACOadnzVvcUS5ni2bA==
   dependencies:
     "@eslint/eslintrc" "^1.3.0"
     "@humanwhocodes/config-array" "^0.9.2"
@@ -6382,10 +6424,10 @@ linkify-it@^3.0.1:
   dependencies:
     uc.micro "^1.0.1"
 
-lint-staged@13.0.1:
-  version "13.0.1"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-13.0.1.tgz#899e78065ab29b88fdd922482411121664ef66be"
-  integrity sha512-Ykaf4QTi0a02BF7cnq7JIPGOJxH4TkNMWhSlJdH9wOekd0X+gog47Jfh/0L31DqZe5AiydLGC7LkPqpaNm+Kvg==
+lint-staged@13.0.2:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-13.0.2.tgz#35a1c57130e9ad5b1dea784972a40777ba433dd5"
+  integrity sha512-qQLfLTh9z34eMzfEHENC+QBskZfxjomrf+snF3xJ4BzilORbD989NLqQ00ughsF/A+PT41e87+WsMFabf9++pQ==
   dependencies:
     cli-truncate "^3.1.0"
     colorette "^2.0.17"
@@ -7694,10 +7736,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
-  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
+prettier@2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
+  integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
 
 pretty-error@^4.0.0:
   version "4.0.0"
