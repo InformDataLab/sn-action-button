@@ -26,6 +26,16 @@ const toggleOptions = [
   },
 ];
 
+const writeSwitches = () => {
+  const map = window.WriteByInform.registeredExtensions[""];
+  const items = {};
+  map.forEach(({extension}, uid) => {
+    console.log(extension)
+    items[uid] = {type: "boolean", label: extension.presenter.baseView.extensionContainerId, ref: "writeExtensions." + uid}
+  });
+  return items;
+}
+
 export default function ext({ translator, shouldHide, senseNavigation }) {
   return {
     definition: {
@@ -73,6 +83,12 @@ export default function ext({ translator, shouldHide, senseNavigation }) {
                   defaultValue: '',
                   options: getActionsList(shouldHide),
                   dropdownOnly: true,
+                },
+                extensions: {
+                  component: "items",
+                  label: "Select Write Extensions",
+                  show: (data) => checkShowAction(data, 'writeExtensions'),
+                  items: writeSwitches(),
                 },
                 bookmark: {
                   type: 'string',

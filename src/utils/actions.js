@@ -15,6 +15,38 @@ export const getValueList = async (app, values, isDate) => {
 
 const actions = [
   {
+    value: "saveWrite",
+    label: "Save Write Extensions",
+    group: 'write',
+    getActionCall:
+      ({writeExtensions}) =>
+        async () => {
+          const map = window.WriteByInform.registeredExtensions[""];
+          Object.entries(writeExtensions).forEach(([key, value]) => {
+            if (value === true) {
+              map.get(key).extension.save()
+            }
+          })
+        },
+    requiredInput: ["writeExtensions"],
+  },
+  {
+    value: "cancelWrite",
+    label: "Cancel Write Extensions",
+    group: 'write',
+    getActionCall:
+      ({writeExtensions}) =>
+        async () => {
+          const map = window.WriteByInform.registeredExtensions[""];
+          Object.entries(writeExtensions).forEach(([key, value]) => {
+            if (value === true) {
+              map.get(key).extension.cancel()
+            }
+          })
+        },
+    requiredInput: ["writeExtensions"],
+  },
+  {
     value: 'applyBookmark',
     translation: 'Object.ActionButton.ApplyBookmark',
     group: 'bookmark',
@@ -369,6 +401,7 @@ const actions = [
 export const getActionsList = (shouldHide) => actions.filter((a) => !a.hide?.(shouldHide));
 
 export function checkShowAction(data, field) {
+  console.log(data, field)
   const act = actions.find((action) => data.actionType === action.value);
   return act && act.requiredInput && act.requiredInput.indexOf(field) !== -1;
 }
